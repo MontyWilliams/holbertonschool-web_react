@@ -1,4 +1,5 @@
 import * as notifications from '../notifications'
+import { schema, normalize } from 'normalizr';
 
 function getAllNotificationsByUser(userId) {
   // return all objects from notifications file
@@ -6,6 +7,8 @@ function getAllNotificationsByUser(userId) {
   .map((notification) => notification.context);
 
 }
+
+
 
 module.exports = getAllNotificationsByUser;
 

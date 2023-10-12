@@ -18,7 +18,6 @@ const expectedResults = [
 ]
 const userId = "5debd764a7c57c7839d722e9";
 
-
 describe("getAllNotificationsByUser", () => {
   it("returns all notifucations for user passed in", () => {
     expect(getAllNotificationsByUser(userId)).toEqual(expectedResults);
