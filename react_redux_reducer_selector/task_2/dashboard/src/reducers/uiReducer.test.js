@@ -12,15 +12,15 @@ describe('uiReducere', () => {
     StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
   });
 
-  it('returns the init state when no action is passed', () => {
+  it('returns the initial state when no action is passed', () => {
     expect(uiReducer(undefined, {})).toEqual(initialState);
   });
 
-  it('returns the initial state when SELECT_COURSE is passed', () => {
+  it('returns the initial state when the action SELECT_COURSE is passed', () => {
     expect(uiReducer(undefined, { type: 'SELECT_COURSE' })).toEqual(initialState);
   });
 
-  it('change isNotificationDrawerVisible to true when DISPLAY_NOTIFICATION_DRAWER passed', () => {
+  it('changes isNotificationDrawerVisible to true when DISPLAY_NOTIFICATION_DRAWER action is passed', () => {
     const action = {
       type: DISPLAY_NOTIFICATION_DRAWER,
     };
